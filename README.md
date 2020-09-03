@@ -1,2 +1,5 @@
 # MachineLearningNLP-Lab
-sample machine learning model for natural language processing
+Sample Machine Learning Model for Natural Language Processing sentiment analysis.
+
+This Machine Learning Model uses data from tweets of airline passangers.
+
