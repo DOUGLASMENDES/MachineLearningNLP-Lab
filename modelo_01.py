@@ -3,6 +3,7 @@ import pandas as pd
 import re
 import nltk 
 import pickle
+import requests
 
 # Treinamento do modelo NLP
 
@@ -35,6 +36,14 @@ def trata_texto(texto):
     return processed_feature
 
 
+print('Downloading training data...')
+
+csvUrl = 'https://github.com/DOUGLASMENDES/MachineLearningNLP-Lab/blob/master/dados/Tweets.csv?raw=true'
+r = requests.get(csvUrl, allow_redirects=True)
+
+open('Tweets.csv', 'wb').write(r.content)
+
+print('Training data downloaded!')
 
 airline_tweets = pd.read_csv("Tweets.csv")
 
