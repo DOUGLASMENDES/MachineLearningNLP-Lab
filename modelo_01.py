@@ -36,7 +36,7 @@ def trata_texto(texto):
 
 
 
-airline_tweets = pd.read_csv("dados/Tweets.csv")
+airline_tweets = pd.read_csv("Tweets.csv")
 
 features = airline_tweets.iloc[:, 10].values
 print(features[:10])
